@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Foldit&family=Maven+Pro&family=Prompt&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+ <div class="big-container">
+  <div class="container">
+    <header>
+      <div class="logo">
+        <h1>HELLO</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Profil</a></li>
+          <li><a href="#">Sosmed</a></li>
+          <li><a href="#">Game</a></li>
+          <li><a href="#" class="active">Lihat</a></li>
+        </ul>
+        <!-- <form >
+          <input type="text" name="srch" id="srch" required placeholder="hanya iseng">
+          <button type="submit"><li class="fa fa-search"></li></button>
+        </form> -->
+      </nav>
+    </header>
+
+    <section>
+      <h2>HELLO</h2>
+      <p>EMUACH</p>
+      <a href="#" class="active"> Lihat </a>
+    </section>
+
+    <footer>
+      <h2>About us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicin
+        g elit. Consequatur possimus saepe vero, eligendi fu
+        ga voluptatem facere numquam id dicta atque corrup
+        ti qui voluptatum.0</p>
+      <h3>Follow us on social Media</h3>
+      <div class="row">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-whatsapp"></i></a>
+      </div>   
+    </footer>
+
+      <video src="./img/videoplayback.mp4" autoplay muted loop></video>
+
+  </div>
+ </div>  
+ <script>
+  const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+const header = document.querySelector('.header.container');
+
+hamburger.addEventListener('click', () => {
+hamburger.classList.toggle('active');
+mobile_menu.classList.toggle('active');
+});
+
+document.addEventListener('scroll', () => {
+var scroll_position = window.scrollY;
+if (scroll_position > 250) {
+  header.style.backgroundColor = '#29323c';
+} else {
+  header.style.backgroundColor = 'transparent';
+}
+});
+
+menu_item.forEach((item) => {
+item.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  mobile_menu.classList.toggle('active');
+});
+});
+
+</script>
+
+</body>
+</html>
