@@ -1417,9 +1417,11 @@ body {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-:is(.dark .navbar-fixed) {
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.5;
+@media (prefers-color-scheme: dark) {
+  .navbar-fixed {
+    background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.5;
+  }
 }
 
 .navbar-fixed {
@@ -1436,9 +1438,11 @@ body {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-:is(.dark .hamburger-line) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+@media (prefers-color-scheme: dark) {
+  .hamburger-line {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -1582,64 +1586,66 @@ body {
   opacity: 1;
 }
 
-:is(.dark .dark\:bg-dark) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-dark {
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+  }
 
-:is(.dark .dark\:bg-poli) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
+  .dark\:bg-poli {
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  }
 
-:is(.dark .dark\:bg-primary) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
-}
+  .dark\:bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+  }
 
-:is(.dark .dark\:bg-slate-300) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
+  .dark\:bg-slate-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+  }
 
-:is(.dark .dark\:bg-slate-800) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
+  .dark\:bg-slate-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  }
 
-:is(.dark .dark\:text-dark) {
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
-}
+  .dark\:text-dark {
+    --tw-text-opacity: 1;
+    color: rgb(15 23 42 / var(--tw-text-opacity));
+  }
 
-:is(.dark .dark\:text-primary) {
-  --tw-text-opacity: 1;
-  color: rgb(2 132 199 / var(--tw-text-opacity));
-}
+  .dark\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgb(2 132 199 / var(--tw-text-opacity));
+  }
 
-:is(.dark .dark\:text-white) {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
+  .dark\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
 
-:is(.dark .dark\:shadow-slate-500) {
-  --tw-shadow-color: #64748b;
-  --tw-shadow: var(--tw-shadow-colored);
-}
+  .dark\:shadow-slate-500 {
+    --tw-shadow-color: #64748b;
+    --tw-shadow: var(--tw-shadow-colored);
+  }
 
-:is(.dark .dark\:hover\:border-primary:hover) {
-  --tw-border-opacity: 1;
-  border-color: rgb(2 132 199 / var(--tw-border-opacity));
-}
+  .dark\:hover\:border-primary:hover {
+    --tw-border-opacity: 1;
+    border-color: rgb(2 132 199 / var(--tw-border-opacity));
+  }
 
-:is(.dark .dark\:hover\:text-primary:hover) {
-  --tw-text-opacity: 1;
-  color: rgb(2 132 199 / var(--tw-text-opacity));
-}
+  .dark\:hover\:text-primary:hover {
+    --tw-text-opacity: 1;
+    color: rgb(2 132 199 / var(--tw-text-opacity));
+  }
 
-:is(.dark .group:hover .dark\:group-hover\:text-primary) {
-  --tw-text-opacity: 1;
-  color: rgb(2 132 199 / var(--tw-text-opacity));
+  .group:hover .dark\:group-hover\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgb(2 132 199 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 640px) {
@@ -1763,8 +1769,10 @@ body {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
-  :is(.dark .lg\:dark\:bg-transparent) {
-    background-color: transparent;
+  @media (prefers-color-scheme: dark) {
+    .lg\:dark\:bg-transparent {
+      background-color: transparent;
+    }
   }
 }
 
